@@ -9,7 +9,7 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   let userDetails = useSelector((state)=>{
-    return state
+    return state.user
   })
   console.log(userDetails)
 
