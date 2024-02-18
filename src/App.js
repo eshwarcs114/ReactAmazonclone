@@ -3,6 +3,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
+import ProductDetails from "./ProductDetails";
 import {
   BrowserRouter as Router,
   Routes,
@@ -39,6 +40,7 @@ function App() {
           <Route path="/login" element={<Login/>}/>
           <Route path="/" element={<><Header /><Home /> </> } index />
           <Route path="/checkout" element={<><Header /><Checkout/></>} />
+          <Route path="/productDetails" element={<><Header /><ProductDetails /> </>} />
           {/* Redirect any unmatched paths to the default route */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
